@@ -1,0 +1,131 @@
+:root {
+  --first-color: black;
+  --white-color: #fafaff;
+  --dark-color: #2a3b47;
+  --text-color: #697477;
+}
+
+/* Media Query 1170px */
+@media (max-width: 1170px) {
+  /* <!-- Start header --> */
+  .container .nav_logo {
+    flex-basis: 25%;
+  }
+  .container .nav_list .nav_item .nav-link {
+    width: 83px;
+    position: relative;
+    transition: all 0.5s;
+  }
+}
+/* Media Query 991px */
+@media (max-width: 991px) {
+}
+/* Media Query 767px */
+@media screen and (max-width: 768px) {
+  /* <!-- Start header --> */
+  .header .container {
+    padding: 20px 0;
+  }
+  .container .nav_toggle {
+    display: block;
+    flex-basis: 50%;
+    text-align: end;
+  }
+  .nav_list {
+    position: fixed;
+    top: var(--header-height);
+    right: -100%;
+    width: 80%;
+    height: 100%;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.3);
+    transition: 0.5s;
+    backdrop-filter: blur(10px);
+  }
+  .nav_list .nav_item {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav_list .nav_item .nav-link {
+    align-self: start;
+    padding: 0.9rem;
+  }
+  .container .nav_list .nav_item .nav-link a {
+    color: rgb(246, 168, 127);
+  }
+  .active::after {
+    margin: auto;
+    top: 2.4rem;
+  }
+  .about_title ::after {
+    margin: auto;
+    top: 2.9rem;
+  }
+  .container .nav_logo {
+    flex-basis: 70%;
+  }
+  /* start ABOUT */
+  .about_container .about_part_1 {
+    flex-basis: 100%;
+  }
+  .about_container .about_part_2 {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .about_part_2 .list_5 ul {
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+  }
+  /* Start  skills */
+  .skills_title ::after {
+    margin: auto;
+    top: 2.9rem;
+  }
+  .skills_part_1 {
+    flex-basis: 100%;
+  }
+  .skills_part_2 {
+    flex-basis: 100%;
+  }
+  /*  Start PORTFOLIO */
+  .protfolio_title ::after {
+    margin: auto;
+    top: 2.9rem;
+  }
+  .protfolio_container .project {
+    flex-basis: 100%;
+  }
+  /* start  contact */
+  .contact_title ::after {
+    margin: auto;
+    top: 2.9rem;
+  }
+  .contact_part_1 {
+    flex-basis: 100%;
+  }
+  .contact_info {
+    margin-left: -20px;
+  }
+  .contact_part_2 {
+    flex-basis: 100%;
+    margin-top: 20px;
+  }
+  .contact_form {
+    width: 100%;
+  }
+  .contact_button {
+    margin-top: 20px;
+  }
+  /*===== Start footer  ===== */
+  .footer_info,
+  .footer_follow,
+  .footer_explore {
+    flex-basis: 100%;
+  }
+}
+/* Media Query 590px */
+@media (max-width: 590px) {
+}
+@media (max-width: 245px) {
+}
